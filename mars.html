@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mars</title>
-<link rel="stylesheet" href="mars.css">
+    <link rel="stylesheet" href="mars.css">
 </head>
+
 <body>
+    <nav class="menu">
+        <section class="menu-left">
+            <a href="#" class="logo">
+                <img src="img/logo.svg" alt="logo">
+            </a>
+            <p class="menu-text">
+                навигация
+            </p>
+        </section>
+        <section class="menu-right">
+            <div class="menu-items">
+                <a href="#" class="menu-item">о планете</a>
+                <a href="#" class="menu-item">об изучении</a>
+                <a href="#" class="menu-item">о спутниках</a>
+                <a href="#" class="menu-item">о колонизации</a>
+            </div>
+        </section>
+    </nav>
     <header class="header">
         <div class="header-content">
             <h1 class="header-title">
@@ -24,5 +44,88 @@
             <img src="img/header-rocket.svg" class="header-rocket" alt="">
         </div>
     </header>
+    <main>
+        <section class="about">
+            <div class="about-left">
+                <img src="img/section-2-planets.svg" alt="" class="about-planets">
+                <div class="about-alien">
+                    <img src="img/section-2-alien-eye.svg" alt="" class="about-alien-eye">
+                </div>
+            </div>
+            <div class="about-right">
+                <h2 class="about-title">О планете</h2>
+                <p class="about-text">
+                    Марс - это четвертая планета от Солнца. Его масса составляет 6,39E23 kg. Атмосферное давление на
+                    марсе составляет 6.01 мбар, а уровень кислорода в ней достигает всего лишь 0,145%. Температуры
+                    достигают от -153 до +35 градусов Цельсия. Один год на Марсе равен 687 дней
+                </p>
+            </div>
+        </section>
+        <section class="study">
+            <div class="study-top">
+                <h2 class="study-title">Как люди покоряют Марс</h2>
+                <p class="study-text">
+                    Человечество активно изучает эту планету. На данный момент NASA запустила уже 4 марсохода:
+                </p>
+                <ul class="study-rovers-list">
+                    <li class="study-rover-item">
+                        <img src="img/section-3-rover-1-ic.svg" alt="">
+                        <p>Cоджорнер</p>
+                    </li>
+                    <li class="study-rover-item">
+                        <img src="img/section-3-rover-2-ic.svg" alt="">
+                        <p>Оппортюнити</p>
+                    </li>
+                    <li class="study-rover-item">
+                        <img src="img/section-3-rover-3-ic.svg" alt="">
+                        <p>Кьюриосити</p>
+                    </li>
+                    <li class="study-rover-item">
+                        <img src="img/section-3-rover-4-ic.svg" alt="">
+                        <p>Персевиранс</p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="study-bottom">
+                <img src="img/section-3-alien.svg" alt="" class="study-alien">
+                <img src="img/section-3-rover.svg" alt="" class="study-rover">
+            </div>
+        </section>
+        <section class="satellites">
+            <h2 class="satellites-title">А еще у Марса есть спутники</h2>
+            <div class="satellites-orbit">
+                <img src="img/section-4-mars.svg" alt="" class="satellites-mars">
+                <div class="satellites-deimos">
+                    <img src="img/section-4-deimos.svg" alt="деймос">
+                    <p>
+                        Деймос
+                    </p>
+                </div>
+                <div class="satellites-phobos">
+                    <img src="img/section-4-phobos.svg" alt="фобос">
+                    <p>
+                        фобос
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="earth">
+            <header class="earth-header"></header>
+            <div class="earth-content">
+                <p>
+                    Возможно, однажды Марс станет второй планетой, приютившей человечество
+                </p>
+            </div>
+            <footer class="earth-footer">
+                <a href="" class="earth-btn">
+                    Запишись в ряды колонистов и первооткрывателей
+
+                </a>
+            </footer>
+            <img src="img/section-5-rocket.svg" alt="" class="earth-rocket ">
+        </section>
+    </main>
 </body>
+
 </html>
