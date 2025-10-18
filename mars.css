@@ -81,6 +81,26 @@ h2 {
     position: absolute;
     left: 40%;
     top: 5%;
+    animation: header-rocket-fly 6s linear 3s 1 both;
+}
+@keyframes header-rocket-fly {
+    0%{
+        left: 0;
+        top: 100%;
+        transform:rotate(90deg);
+
+    }
+    40%{
+        left: 40%;
+        top: 5%;
+        transform: rotate(45deg);
+        
+    }
+    100%{
+        left: 55%;
+        top: 45%;
+        transform: rotate(0deg);
+    }
 }
 
 .menu {
