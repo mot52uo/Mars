@@ -1,0 +1,275 @@
+ @font-face {
+     font-family: Gputeks;
+
+     src: url("fonts/Gputeks-Regular.woff2"), url("fonts/Gputeks-Regular.woff");
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Gputeks;
+
+ }
+
+ html {
+     font-size: 30px;
+ }
+
+ p {
+     font-size: 1rem;
+ }
+
+ h1 {
+     font-size: 6rem;
+     line-height: 6rem;
+
+ }
+
+ h2 {
+     font-size: 2rem;
+     line-height: 2rem;
+ }
+
+ .profession {
+     background: linear-gradient(180.00deg, rgba(34, 40, 54, 1), rgba(41, 49, 70, 1) 100%);
+     width: 100%;
+     height: 100vh;
+     padding: 100px 0;
+ }
+
+ .profession-title {
+     width: 1315px;
+     margin: 0 auto;
+     display: flex;
+     color: white;
+ }
+
+ .profession-frame {
+     flex-grow: 1;
+     height: 2rem;
+     overflow: hidden;
+     position: relative;
+
+ }
+
+ .profession-type-container {
+     width: 100%;
+     text-align: center;
+     list-style: none;
+     position: absolute;
+     top: 0;
+     left: 0;
+     animation: profession-move 4s linear 0s infinite;
+ }
+
+ @keyframes profession-move {
+     100% {
+         top: -6rem;
+     }
+
+ }
+
+ .profession-type {
+     font-size: 2rem;
+     color: rgba(253, 155, 64, 1);
+     line-height: 2rem;
+
+ }
+
+ .profession-card {
+     width: 340px;
+     height: 456px;
+     background: rgba(57, 67, 92, 1);
+     text-align: center;
+     padding: 50px;
+     color: white;
+     position: relative;
+ }
+
+ .profession-card:nth-of-type(2n) {
+     border: 2px solid rgba(255, 255, 255, 1);
+     transform: scale(1.1);
+ }
+
+ .profession-card img {
+     height: 222px;
+
+ }
+
+ .profession-content {
+     width: 1315px;
+     margin: 100px auto;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .profession-card-accordion {
+     text-align: left;
+     font-size: 0.6rem;
+     line-height: 0.7rem;
+ }
+
+ .profession-card-accordion summary {
+     font-size: 1rem;
+     text-align: center;
+     line-height: auto;
+     color: #FD9B40;
+     margin-bottom: 20px;
+ }
+
+ .profession-card-accordion[open] {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     padding: 30px;
+     background: rgba(57, 67, 92, 1);
+ }
+
+ .quotes {
+     width: 100%;
+     min-height: 100vh;
+     padding: 40px;
+     background: url("img/section-3-bg.svg") bottom/contain no-repeat, linear-gradient(180.00deg, rgba(41, 49, 69, 1), rgba(34, 40, 55, 1) 100%);
+
+ }
+
+ .quotes-text {
+     margin-bottom: 52px;
+     color: white;
+     text-align: center;
+
+ }
+
+ .quotes-link {
+     font-size: 2rem;
+     margin-bottom: 100px;
+     color: white;
+     text-decoration: none;
+     text-align: center;
+     display: block;
+ }
+
+ .quotes-link:visited {
+     color: rgba(54, 61, 83, 1);
+ }
+
+
+ .quotes-contaner {
+     background: rgba(53, 63, 90, 1);
+     width: 1315px;
+     padding: 110px;
+     margin: 0 auto;
+     list-style: none;
+ }
+
+ .quotes-item:lang(ru) {
+     color: white;
+
+ }
+
+ .quotes-item:lang(en) {
+     color: rgba(255, 222, 183, 1);
+ }
+
+ .quote {}
+
+ .quote-author {
+     color: rgba(253, 155, 64, 1);
+     text-align: right;
+     margin-top: 50px;
+ }
+
+ .quotes-item:not(:last-of-type) {
+     margin-bottom: 150px;
+ }
+
+ .pushin {
+     background: rgba(255, 183, 98, 1);
+     padding: 286px 0;
+ }
+
+ .pushin-form {
+     width: 1315px;
+     margin: 0 auto;
+ }
+
+ .pushin-title {
+     color: white;
+     background: rgba(32, 37, 53, 1);
+     text-align: center;
+     padding: 65px 0;
+ }
+
+ .pushin-form-body {
+     background: rgba(53, 63, 90, 1);
+     padding: 117px 156px;
+     color: white;
+     text-align: center;
+ }
+
+ .pushin-form-body input {
+     width: 100%;
+     padding: 10px;
+     background: rgba(48, 56, 84, 1);
+     border: none;
+     outline: none;
+     border-bottom: 3px solid rgba(32, 37, 53, 1);
+     font-size: 1rem;
+     margin-bottom: 50px;
+     color: white;
+ }
+
+ .pushin-form-body input:focus {
+     border: 2px solid rgba(253, 155, 64, 1);
+ }
+
+ .pushin-form-body input[type="checkbox"] {
+     /* width: 60px; */
+     height: 60px;
+     border: 2px solid rgba(32, 37, 53, 1);
+     outline: none;
+ }
+
+ .pushin-form-body button {
+     display: block;
+     width: 526px;
+     height: 115px;
+     background: linear-gradient(90.00deg, rgba(36, 97, 174, 1), rgba(208, 21, 101, 1) 18%, rgba(178, 221, 29, 1) 81%, rgba(36, 97, 174, 1) 100%);
+     background-size: 300%;
+     animation: btn-anime 6s linear infinite;
+     border: none;
+     outline: none;
+     font-size: 1rem;
+     color: white;
+     margin: 164px auto 0;
+     cursor: pointer;
+
+ }
+
+ .back-btn {
+     padding: 35px 70px;
+     position: fixed;
+     left: 0;
+     top: 70px;
+     font-size: 1rem;
+     text-decoration: none;
+     color: white;
+     background: linear-gradient(90.00deg, rgba(36, 97, 174, 1), rgba(208, 21, 101, 1) 18%, rgba(178, 221, 29, 1) 81%, rgba(36, 97, 174, 1) 100%);
+     background-size: 300%;
+     animation: btn-anime 6s linear infinite;
+     cursor: pointer;
+ }
+
+ @keyframes btn-anime {
+     0% {
+         background-position-x: 0;
+     }
+
+     100% {
+         background-position-x: -300%;
+     }
+
+ }
